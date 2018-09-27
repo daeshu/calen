@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<article>
+{{ content }}
+</article>
+<p>Tagged: 
+ {% for category in page.categories %}
+  <a href="/search?q={{ category | slugize }}&a=blog">
+    {{ category }}
+    ,
+  </a> 
+ {% endfor %}
+</p>
+{% include comments.html %}
