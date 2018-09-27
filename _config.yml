@@ -1,0 +1,24 @@
+title: Blank Theme Sample
+author: kyleplo
+description: Example site with the Blank theme.
+# Link to a profile picture - required
+avatar: https://avatars1.githubusercontent.com/u/31634240?v=4&s=40
+# social links - optional
+mail:  
+twitter_username: 
+github_username: 
+
+# Ignore the rest of this file unless you want to change more settings
+rss: rss
+permalink: /blog/:title/
+
+# Pagination
+paginate: 15
+paginate_path: "/blog/:num/"
+
+
+minima:
+  date_format: "%b %-d, %Y"
+
+plugins:
+ - jekyll-feed
