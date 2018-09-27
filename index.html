@@ -1,0 +1,17 @@
+---
+title: Home
+---
+{% for post in paginator.posts %}
+  <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+  <div>
+    {{ post.excerpt }}
+  </div>
+  <p>
+ {% for category in page.categories %}
+  <a href="/search?q={{ category | slugize }}&a=blog">
+    {{ category }}
+    ,
+  </a> 
+ {% endfor %}
+</p>
+{% endfor %}
