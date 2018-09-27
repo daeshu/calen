@@ -3,6 +3,8 @@ author: kyleplo
 description: Example site with the Blank theme.
 # Link to a profile picture - required
 avatar: https://avatars1.githubusercontent.com/u/31634240?v=4&s=40
+# path to your repository - required
+repo: kyleplo/blank-theme
 # social links - optional
 mail:  
 twitter_username: 
