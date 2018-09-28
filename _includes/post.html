@@ -1,0 +1,12 @@
+<div class="result" hidden>
+      <h3><a href="{{ includes.post.url | relative_url }}">{{ includes.post.title }}</a></h3>
+      <p>{{ includes.post.content | number_of_words | divided_by: 500.0 | ceil }} minute read</p>
+      <p>
+        {% if includes.full %}
+        {{ includes.post.content }}
+        {% else %}
+        {{ includes.post.excerpt }}
+        {% endif %}
+      </p>
+    <p>Tagged: {% for c in includes.post.tags %}<a href="/search?q={{ c }}&a=blog" class="tag">{{ c }}</a> {% endfor %}</p>
+</div>
