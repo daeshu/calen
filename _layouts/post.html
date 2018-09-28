@@ -5,9 +5,9 @@ layout: default
 {{ content }}
 </article>
 <p>Tagged: 
- {% for category in page.categories %}
-  <a href="/search?q={{ category | slugize }}&a=blog">
-    {{ category }}
+ {% for tag in page.tags %}
+  <a href="/search?q={{ tag | slugize }}&a=blog">
+    {{ tag }}
     ,
   </a> 
  {% endfor %}
