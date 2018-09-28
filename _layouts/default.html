@@ -23,6 +23,7 @@
         <a  href="{{ page.url }}">{{ page.title }}</a> 
        {%- endif -%}
       {%- endfor -%}
+      <form action="/search" method="GET" style="display:inline;margin-left:15px" class="search"><input type="text" name="q" placeholder="Search..." style="width: 120px;"><input type="submit" value="Search"></form>
     </nav>
     <h1>{{ page.title }}</h1>
     <main>
