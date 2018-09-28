@@ -15,3 +15,4 @@ layout: default
  {% endfor %}
 </p>
 {% endfor %}
+<p>{%- if paginator.previous_page_path -%}<a href="{{ paginator.previous_page_path }}">&lt; Previous</a>{%- endif -%} {%- if paginator.next_page_path -%}<a href="{{ paginator.next_page_path }}">Next &gt;</a>{%- endif -%}</p>
