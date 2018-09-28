@@ -7,11 +7,7 @@ permalink: /search/
 <p id="status">Loading search...</p>
 {% for post in site.posts %}
 <div class="result" hidden>
-      <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
-      <p>
-        {{ post.excerpt }}
-      </p>
-    <p>{% for c in post.tags %}<a href="/search?q={{ c }}&a=blog">{{ c }}</a> {% endfor %}</p>
+      {% include post.html full="false" post=post %}
 </div>
   {% endfor %}
 <script>
