@@ -14,14 +14,14 @@
   </head>
   <body>
     <nav>
-    <a class="logo" href="{{ "/" | relative_url }}"><img src="{{ site.avatar }}" width="50" height="50" alt="{{ site.author }}"></a>
+    <a class="logo" href='{{ "/" | relative_url }}'><img src="{{ site.avatar }}" width="50" height="50" alt="{{ site.author }}"></a>
       <a  href="/">Home</a> 
       {%- for page in site.pages -%}
        {%- if page.title -%}
         <a  href="{{ page.url | relative_url }}">{{ page.title }}</a> 
        {%- endif -%}
       {%- endfor -%}
-      <form action="{{ "/search" | relative_url }}" method="GET" style="display:inline;margin-left:15px" class="search"><input type="text" name="q" placeholder="Search..." style="width: 120px;"><input type="submit" value="Search"></form>
+      <form action='{{ "/search" | relative_url }}' method="GET" style="display:inline;margin-left:15px" class="search"><input type="text" name="q" placeholder="Search..." style="width: 120px;"><input type="submit" value="Search"></form>
     </nav>
     <h1>{{ page.title }}</h1>
     <main>
@@ -38,7 +38,7 @@
        <a href="https://github.com/{{ site.github_username }}">Github</a>
       {%- endif -%}
       {%- if site.rss -%}
-       <a href="{{ "feed.xml" | relative_url }}">RSS</a>
+       <a href='{{ "feed.xml" | relative_url }}'>RSS</a>
       {%- endif -%}
     </footer>
   </body>
