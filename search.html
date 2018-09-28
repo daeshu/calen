@@ -7,7 +7,7 @@ permalink: /search/
 <p id="status">Loading search...</p>
 {% for post in site.posts %}
 <div class="result" hidden>
-      {% include post.html full="false" title=post.title url=post.url tags=post.tags content=post.content excerpt=post.excerpt %}
+      {% include post.html full="false" title={{ post.title }} url={{ post.url }} tags={{ post.tags }} content={{ post.content }} excerpt={{ post.excerpt }} %}
 </div>
   {% endfor %}
 <script>
