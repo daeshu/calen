@@ -10,12 +10,18 @@ mail:
 twitter_username: 
 github_username: 
 
+# Optional config - just for more customization or troubleshooting
+# how many posts to show per page
+paginate: 15
+
+# change this if you are on a project repo, not a username.github.io repo
+# for example, if your repo is hello-world, set this to hello-world
+path: 
+
 # Ignore the rest of this file unless you want to change more settings
 rss: rss
 permalink: /blog/:title/
 
-# Pagination
-paginate: 15
 paginate_path: "/blog/:num/"
 
 
