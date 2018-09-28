@@ -1,0 +1,39 @@
+---
+layout: default
+title: Search
+permalink: /search/
+---
+<input type="text" id="query" oninput="q = this.value;search();">
+<p id="status">Loading search...</p>
+{% for post in site.posts %}
+<div class="result" hidden>
+      <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
+      <p>
+        {{ post.excerpt }}
+      </p>
+    <p>{% for c in post.tags %}<a href="/search?q={{ c }}&a=blog">{{ c }}</a> {% endfor %}</p>
+</div>
+  {% endfor %}
+<script>
+var searchParams, q;
+function search(){
+document.title = "Search " + q + " on {{ site.title }}"
+var r = document.getElementsByClassName("result");
+for(var i = 0;i < r.length;i++){
+r[i].setAttribute("hidden","hidden");
+};
+var c = 0;
+for(var i = 0;i < r.length;i++){
+if(r[i].innerHTML.toLowerCase().indexOf(q.toLowerCase()) > -1){r[i].removeAttribute("hidden");c++};
+};
+var status = document.getElementById("status");
+if(c > 0){status.innerHTML = c.toString() + " results"}else{status.innerHTML = "No results"};
+}
+window.addEventListener("load",function (){
+var searchParams = new URLSearchParams(location.search);
+q = searchParams.get("q");
+if(!q){q = ""};
+document.getElementById("query").value = q;
+search();
+});
+</script>
