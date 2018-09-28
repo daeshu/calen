@@ -38,6 +38,9 @@
       {%- if site.github_username -%}
        <a href="https://github.com/{{ site.github_username }}">Github</a>
       {%- endif -%}
+      {%- if site.rss -%}
+       <a href="feed.xml">RSS</a>
+      {%- endif -%}
     </footer>
   </body>
 </html>
