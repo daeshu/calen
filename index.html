@@ -2,7 +2,7 @@
 layout: default
 ---
 {% for post in paginator.posts %}
-  {% include post.html full="false" title=post.title url=post.url tags=post.tags content=post.content excerpt=post.excerpt %}
+  {% include post.html full="false" title={{ post.title }} url={{ post.url }} tags={{ post.tags }} content={{ post.content }} excerpt={{ post.excerpt }} %}
 {% endfor %}
 
 <!-- This part was copied and edited from the Jekyll website -->
