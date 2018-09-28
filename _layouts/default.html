@@ -19,7 +19,7 @@
     <a class="logo" href="/"><img src="{{ site.avatar }}" width="50" height="50" alt="{{ site.author }}"></a>
       <a  href="/">Home</a> 
       {%- for page in site.pages -%}
-       {%- if page.title & page.url.length > 1 -%}
+       {%- if page.title -%}
         <a  href="{{ page.url }}">{{ page.title }}</a> 
        {%- endif -%}
       {%- endfor -%}
