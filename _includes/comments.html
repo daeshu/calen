@@ -30,6 +30,9 @@ if(j[i].comments > 0){
   });
 }
 commentHtml += '<p><a href="https://github.com/{{ site.repo }}/issues/' + j[i].number + '">Reply on Github</a></p></div>';
+  if(!((i + 1) > j.length)){
+       commentHtml += "<hr>";
+     }
 document.getElementById('comments').innerHTML += commentHtml;
 }
 }
