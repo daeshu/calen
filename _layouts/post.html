@@ -1,5 +1,5 @@
 ---
 layout: default
 ---
-{% include post.html full="true" title=post.title url=post.url tags=post.tags content=post.content excerpt=post.excerpt %}
+{% include post.html full="true" title={{ post.title }} url={{ post.url }} tags={{ post.tags }} content={{ post.content }} excerpt={{ post.excerpt }} %}
 {% include comments.html %}
