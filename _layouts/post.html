@@ -1,5 +1,11 @@
 ---
 layout: default
 ---
-{% include post.html full=true title={{ post.title }} url={{ post.url }} tags={{ post.tags }} content={{ post.content }} excerpt={{ post.excerpt }} %}
+  <div class="post">
+      <p>{{ post.content | number_of_words | divided_by: 500.0 | ceil }} minute read</p>
+      <p>
+        {{ post.content }}
+      </p>
+    <p>Tagged: {% for c in post.tags %}<a href='{{ "/search" | relative_url }}?q={{ c }}&a=blog' class="tag">{{ c }}</a> {% endfor %}</p>
+</div>
 {% include comments.html %}
