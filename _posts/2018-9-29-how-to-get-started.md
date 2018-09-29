@@ -61,7 +61,7 @@ In the file, set the `title`, `description` and `avatar`. Also, replace any inst
 
 ## 3. Add other files
 
-Copy the `index.html`, `search.html`, and `404.md` files from [this repo](https://github.com/kyleplo/blank-theme/tree/gh-pages)
+Copy the `index.html`, `search.html`, `style.css` and `404.md` files from [this repo](https://github.com/kyleplo/blank-theme/tree/gh-pages)
 
 ## 4. Create a post
 
