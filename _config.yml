@@ -30,9 +30,8 @@ permalink: /blog/:title/
 
 paginate_path: "/blog/:num/"
 
-
-minima:
-  date_format: "%b %-d, %Y"
+sass:
+    sass_dir: _sass
 
 plugins:
  - jekyll-feed
