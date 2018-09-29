@@ -4,6 +4,12 @@ body {
     margin-left: 10%;
     overflow-x: hidden
 }
+blockquote {
+    padding: 1em;
+    background: #ffff99;
+    border-left: #ffcc00;
+    margin: 1em;
+}
 footer {
     width: 100%;
     background: $footer;
