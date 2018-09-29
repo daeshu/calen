@@ -18,7 +18,9 @@
       <a  href="/">Home</a> 
       {%- for page in site.pages -%}
        {%- if page.title -%}
-        <a  href="{{ page.url | relative_url }}">{{ page.title }}</a> 
+        {% unless page.hidefromnav %}
+         <a  href="{{ page.url | relative_url }}">{{ page.title }}</a> 
+        {% endunless %}
        {%- endif -%}
       {%- endfor -%}
       <form action='{{ "/search" | relative_url }}' method="GET" style="display:inline;margin-left:15px" class="search"><input type="text" name="q" placeholder="Search..." style="width: 120px;"><input type="submit" value="Search"></form>
