@@ -6,5 +6,5 @@ $accent: {{ site.theme_accent }};
 $tags: {{ site.theme_tags }};
 $footer: {{ site.theme_footer }};
 
-@import "_sass/blank-theme/style";
-@import "_sass/blank-theme/highlight";
+@import "style";
+@import "highlight";
