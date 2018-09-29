@@ -31,7 +31,6 @@ permalink: /blog/:title/
 paginate_path: "/blog/:num/"
 
 sass:
-    sass_dir: _sass/blank-theme
     style: compact
 
 plugins:
