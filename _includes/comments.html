@@ -2,6 +2,7 @@
 <input type="text" id="comment" placeholder="Type your comment here..." oninput="var text= this.value.replace(/  /g,'+');document.getElementById('post').href='https://github.com/{{ site.repo }}/issues/new?title=Comment+for+' + location.pathname + ': ' + text.slice(0,10) + '&body=' + text;document.getElementById('msg').removeAttribute('hidden');">
 <p id="msg" hidden>You will have to confirm the comment with your Github account. I have to moderate your comment before displaying it on this page. Markdown is not supported.</p>
 <a href="https://github.com/{{ site.repo }}/issues/new" id="post" target="_blank"><button>Post comment</button></a>
+<br>
   <div id="comments"></div></div>
 <!-- <div class="comment"><img width="50" height="50" style="border-radius: 5px"><p><a href="https://github.com/octocat">@octocat</a></p><p>hi!</p><div id="replies-0"><img width="50" height="50" style="border-radius: 5px"><p><a href="https://github.com/octocat">@octocat</a></p><p>hi!</p></div><p><a>Reply</a></p></div> -->
 <script>
