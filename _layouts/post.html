@@ -2,7 +2,7 @@
 layout: default
 ---
   <div class="post">
-      <p>{{ page.content | number_of_words | divided_by: 500.0 | ceil }} minute read | Written: {{ page.date | date_to_string: "ordinal", "US" }}</p>
+      <p>{{ page.content | number_of_words | divided_by: 500.0 | ceil }} minute read</p>
       <p>
         {{ page.content }}
       </p>
