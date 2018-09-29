@@ -2,7 +2,14 @@
 layout: default
 ---
 {% for post in paginator.posts %}
-  {% include post.html full=false title={{ post.title }} url={{ post.url }} tags={{ post.tags }} content={{ post.content }} excerpt={{ post.excerpt }} %}
+  <div class="post">
+      <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+      <p>{{ post.content | number_of_words | divided_by: 500.0 | ceil }} minute read</p>
+      <p>
+        {{ post.excerpt }}
+      </p>
+    <p>Tagged: {% for c in post.tags %}<a href='{{ "/search" | relative_url }}?q={{ c }}&a=blog' class="tag">{{ c }}</a> {% endfor %}</p>
+</div>
 {% endfor %}
 
 <!-- This part was copied and edited from the Jekyll website -->
