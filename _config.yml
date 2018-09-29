@@ -9,6 +9,12 @@ repo: kyleplo/blank-theme
 mail:  
 twitter_username: 
 github_username: kyleplo
+# theme - fill out if you want to change colors
+
+theme_nav: "#dddddd" # color of the navbar
+theme_accent: "#1199ff" # color of links and some other things
+theme_tags: "#ee7700" # color of tags on post pages
+theme_footer: "#999999" # color of the footer
 
 # Optional config - just for more customization or troubleshooting
 # how many posts to show per page
