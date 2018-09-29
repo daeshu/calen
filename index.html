@@ -4,7 +4,7 @@ layout: default
 {% for post in paginator.posts %}
   <div class="post">
       <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-      <p>{{ post.content | number_of_words | divided_by: 500.0 | ceil }} minute read</p>
+      <p>{{ post.content | number_of_words | divided_by: 130.0 | ceil }} minute read</p>
       <p>
         {{ post.excerpt }}
       </p>
