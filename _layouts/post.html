@@ -6,6 +6,6 @@ layout: default
       <p>
         {{ page.content }}
       </p>
-    <p>Tagged: {% for c in page.tags %}<a href='{{ "/search" | relative_url }}?q={{ c }}&a=blog' class="tag">{{ c }}</a> {% endfor %}</p>
+    <p>Tagged: {% for c in page.tags %}<a href='{{ "/search" | relative_url }}?q={{ c }}' class="tag">{{ c }}</a> {% endfor %}</p>
 </div>
 {% include comments.html %}
