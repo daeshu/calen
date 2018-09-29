@@ -1,2 +1,7 @@
+$nav: {{ site.theme_nav }}
+$accent: {{ site.theme_accent }}
+$tags: {{ site.theme_tags }}
+$footer: {{ site.theme_footer }}
+
 @import "style"
 @import "highlight"
