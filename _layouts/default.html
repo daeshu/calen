@@ -15,7 +15,7 @@
   <body>
     <nav>
     <a class="logo" href='{{ "/" | relative_url }}'><img src="{{ site.avatar }}" width="50" height="50" alt="{{ site.author }}"></a>
-      <a  href="/">Home</a> 
+      <a  href="{{ "/" | relative_url }}">Home</a> 
       {%- for page in site.pages -%}
        {%- if page.title -%}
         {% unless page.hidefromnav %}
