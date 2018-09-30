@@ -9,7 +9,7 @@ layout: default
       <p>
         {{ post.excerpt }}
       </p>
-    <p>Tagged: {% for c in post.tags %}<a href='{{ "/search" | relative_url }}?q={{ c }}' class="tag">{{ c }}</a> {% endfor %}</p>
+    <p>Tagged: {% for c in post.tags %}<a href='{{ "/" | relative_url }}?q={{ c }}' class="tag">{{ c }}</a> {% endfor %}</p>
 </div>
 {% endfor %}
 
@@ -59,7 +59,7 @@ layout: default
       <p>
         {{ post.excerpt }}
       </p>
-    <p>Tagged: {% for c in post.tags %}<a href='{{ "/search" | relative_url }}?q={{ c }}' class="tag">{{ c }}</a> {% endfor %}</p>
+    <p>Tagged: {% for c in post.tags %}<a href='{{ "/" | relative_url }}?q={{ c }}' class="tag">{{ c }}</a> {% endfor %}</p>
 </div>
   {% endfor %}
 <script>
