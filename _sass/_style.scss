@@ -88,7 +88,7 @@ pre {
 }
 @media only screen and (max-width: 519px){
     nav form {
-        display: none;
+        display: none!important;
     }
 }
 @media only screen and (max-width: 305px){
