@@ -1,8 +1,11 @@
 body {
     font-family: Arial, sans-serif;
+    overflow-x: hidden
+}
+main {
     margin-top: 100px;
     margin-left: 10%;
-    overflow-x: hidden
+    margin-right: 10%;
 }
 blockquote {
     padding: 1em;
@@ -13,8 +16,6 @@ blockquote {
 footer {
     width: 100%;
     background: $footer;
-    position: absolute;
-    left: 0px;
     padding: 2%;
     overflow: hidden
 }
@@ -53,9 +54,22 @@ nav a {
     padding-top: 32px;
     padding-bottom: 30px;
     transition: background-color 0.5s ease;
+    position: relative;
+    bottom: 30px;
+    background-color: $nav;
+}
+nav a.logo {
+    bottom: 0px;
 }
 nav a:hover {
-    background: white
+    background-color: white
+}
+nav a.logo:hover {
+    background-color: $nav;
+}
+nav form {
+    position: relative;
+    bottom: 30px;
 }
 input, button {
     font-size: 1.2em;
@@ -68,5 +82,25 @@ input[type=submit], button {
     color: white;
 }
 pre {
-background-color: #bbbbbb;
+    background-color: #eeeeee;
+}
+@media only screen and (max-width: 519px){
+    nav form {
+        display: none;
+    }
+}
+@media only screen and (max-width: 305px){
+    nav a {
+        display: none;
+    }
+    footer a {
+        display: block;
+        text-align: center;
+    }
+    nav a.logo {
+        display: inline;
+    }
+    nav {
+        text-align: center;
+    }
 }
