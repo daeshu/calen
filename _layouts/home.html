@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+<section id="main">
 {% for post in paginator.posts %}
   <div class="post">
       <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
@@ -47,3 +48,43 @@ layout: default
 </div>
 {% endif %}
 <!-- End copy -->
+</section>
+<section hidden id="search">
+<input type="text" id="query" oninput="q = this.value;search();" placeholder="Search">
+<p id="status">Loading search...</p>
+{% for post in site.posts %}
+  <div class="post result">
+      <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+      <p>{{ post.content | number_of_words | divided_by: 130.0 | ceil }} minute read</p>
+      <p>
+        {{ post.excerpt }}
+      </p>
+    <p>Tagged: {% for c in post.tags %}<a href='{{ "/search" | relative_url }}?q={{ c }}' class="tag">{{ c }}</a> {% endfor %}</p>
+</div>
+  {% endfor %}
+<script>
+var searchParams, q;
+function search(){
+document.title = "Search " + q + " on {{ site.title }}"
+var r = document.getElementsByClassName("result");
+for(var i = 0;i < r.length;i++){
+r[i].setAttribute("hidden","hidden");
+};
+var c = 0;
+for(var i = 0;i < r.length;i++){
+if(r[i].innerHTML.toLowerCase().indexOf(q.toLowerCase()) > -1){r[i].removeAttribute("hidden");c++};
+};
+var status = document.getElementById("status");
+if(c > 0){status.innerHTML = c.toString() + " results"}else{status.innerHTML = "No results"};
+}
+window.addEventListener("load",function (){
+var searchParams = new URLSearchParams(location.search);
+var q = searchParams.get("q");
+if(!q || q.length < 1){return false};
+document.getElementById("query").value = q;
+document.getElementById("search").removeAttribute("hidden");
+document.getElementById("main").setAttribute("hidden","hidden");
+search();
+});
+</script>
+</section>
