@@ -79,7 +79,7 @@ if(c > 0){status.innerHTML = c.toString() + " results"}else{status.innerHTML = "
 }
 window.addEventListener("load",function (){
 var searchParams = new URLSearchParams(location.search);
-var q = searchParams.get("q");
+q = searchParams.get("q");
 if(!q || q.length < 1){return false};
 document.getElementById("query").value = q;
 document.getElementById("search").removeAttribute("hidden");
