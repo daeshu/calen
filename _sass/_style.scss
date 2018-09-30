@@ -1,6 +1,7 @@
 body {
     font-family: Arial, sans-serif;
-    overflow-x: hidden
+    overflow-x: hidden;
+    margin: 0;
 }
 main {
     margin-top: 100px;
@@ -55,17 +56,18 @@ nav a {
     padding-bottom: 30px;
     transition: background-color 0.5s ease;
     position: relative;
-    bottom: 30px;
+    bottom: 35px;
     background-color: $nav;
 }
 nav a.logo {
     bottom: 0px;
+    background-color: transparent;
 }
 nav a:hover {
     background-color: white
 }
 nav a.logo:hover {
-    background-color: $nav;
+    background-color: transparent;
 }
 nav form {
     position: relative;
