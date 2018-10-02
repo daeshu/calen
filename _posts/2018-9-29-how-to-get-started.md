@@ -10,7 +10,7 @@ Create Github repository and title it "username.github.io"
 Create an `_config.yml` file and give it this content:
 
 ```yaml
-remote_theme: kyleplo/blank-theme
+remote_theme: simple-themes/blank-theme
 
 title: Your Blog's Name
 author: username
@@ -53,7 +53,7 @@ plugins:
 
 > **Protip:** To change the amount of posts that appear per page, change the number on the `paginate: 15` line
 
-> **Troubleshooting:** If some features, like links and comments don't work, try setting the `path: ` field to your repo name (such as `path: hello-world`) and the `repo` field to anything in the repo URL after `https://github.com/` (if your repo url is `https://github.com/kyleplo/blank-theme`, set this to `kyleplo/blank-theme`)
+> **Troubleshooting:** If some features, like links and comments don't work, try setting the `path: ` field to your repo name (such as `path: hello-world`) and the `repo` field to anything in the repo URL after `https://github.com/` (if your repo url is `https://github.com/simple-themes/blank-theme`, set this to `simple-themes/blank-theme`)
 
 ## 2. Set Configuration File
 
@@ -61,7 +61,7 @@ In the file, set the `title`, `description` and `avatar`. Also, replace any inst
 
 ## 3. Add other files
 
-Copy the `index.html`, `style.css` and `404.md` files from [this repo](https://github.com/kyleplo/blank-theme/tree/gh-pages)
+Copy the `index.html`, `style.css` and `404.md` files from [this repo](https://github.com/simple-themes/blank-theme/tree/gh-pages)
 
 ## 4. Create a post
 
