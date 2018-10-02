@@ -1,16 +1,16 @@
-remote_theme: kyleplo/blank-theme
+remote_theme: simple-themes/blank-theme
 
 title: Blank Theme Sample
-author: kyleplo
+author: simple-themes
 description: Example site with the Blank theme.
 # Link to a profile picture - required
 avatar: https://avatars0.githubusercontent.com/u/43795230?s=400&v=4
 # path to your repository - required
-repo: kyleplo/blank-theme
+repo: simple-themes/blank-theme
 # social links - optional
 mail:  
 twitter_username: 
-github_username: kyleplo
+github_username: simple-themes
 # theme - fill out if you want to change colors
 
 theme_nav: "#dddddd" # color of the navbar
