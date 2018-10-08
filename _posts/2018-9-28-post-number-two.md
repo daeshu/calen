@@ -53,3 +53,12 @@ Block Diff:
 + Hello
 - Goodbye
 ```
+
+Table:
+
+| Color  | Red | Blue | Green |
+|--------|-----|------|-------|
+| Orange | 255 | 0    | 175   |
+| Yellow | 255 | 0    | 255   |
+| Purple | 255 | 255  | 0     |
+| Aqua   | 0   | 255  | 255   |
