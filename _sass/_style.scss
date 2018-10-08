@@ -8,6 +8,17 @@ main {
     margin-left: 10%;
     margin-right: 10%;
 }
+th, td {
+    border: solid 1px $accent;
+    border-collapse: collapse;
+    padding: 2px;
+}
+table {
+    border-collapse: collapse
+}
+tr:nth-child(even), thead tr {
+    background-color: #eeeeee;
+}
 blockquote {
     padding: 1em;
     background: #ffff99;
